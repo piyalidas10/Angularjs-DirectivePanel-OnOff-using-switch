@@ -1,0 +1,12 @@
+<div data-ng-repeat="netw in netwSrc">
+    <div class="col-xs-12 switchBox" id="switchBox-{{netw}}">
+        <span class="switchBox_title">{{netw}}</span>
+        <div class="onoffswitch">
+            <input type="checkbox" value="{{netw}}" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch-{{netw}}">
+            <label class="onoffswitch-label" for="myonoffswitch-{{netw}}" ng-click="toggleSelection(netw)">
+                <span class="onoffswitch-inner"></span>
+                <span class="onoffswitch-switch"></span>
+            </label>
+        </div>
+    </div>
+</div>
